@@ -1,0 +1,23 @@
+{
+	"manifest_version": 2,
+	"name": "Pokemon Chrome Version",
+	"version": "0.1",
+	"content_scripts": [
+		{
+			"matches": [
+				"<all_urls>"
+			],
+			"js": ["content.js"]
+		}
+	],
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"icons": { 	
+		"400": "icons/icon400.png"
+	},
+	"web_accessible_resources": [
+		"Pokemon/images/pokemon%20(*).png",
+		"Pokemon/pokeball.png"
+	]
+}
